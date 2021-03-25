@@ -84,6 +84,8 @@ public class ChangeFragment extends Fragment implements IFragment{
         list.add(new RecyclerModel("Айдар","Hello",R.drawable.user2));
         list.add(new RecyclerModel("Айгерим","Привет",R.drawable.user2));
         list.add(new RecyclerModel("Бенедикт","Hi",R.drawable.user2));
+        list.add(new RecyclerModel("ttcxgf","Hi",R.drawable.user2));
+
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager((MainActivity)getActivity()));
