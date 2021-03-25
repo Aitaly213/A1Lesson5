@@ -31,6 +31,8 @@ public class DetailsActivity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         TextFragment fragment = TextFragment.newInstance(title,subTitle,image);
         transaction.add(R.id.details_fragment,fragment);
+//        fragment.showText(title,subTitle,image);
         transaction.commit();
     }
+
 }

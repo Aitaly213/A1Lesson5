@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
     android:background="@color/teal_700"
     tools:context=".TextFragment">
 
@@ -12,30 +13,38 @@
         android:id="@+id/image_text"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-
-
+        android:layout_gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
         android:text="@string/hello_blank_fragment"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_text"
         />
 
     <TextView
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/hello_blank_fragment"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="14sp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

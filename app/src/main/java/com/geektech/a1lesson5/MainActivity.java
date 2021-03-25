@@ -38,11 +38,14 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void displayDetails(String title, String subTitle,int image_display) {
+        TextFragment textFragment = (TextFragment) fragmentManager.findFragmentById(R.id.second_fragment);
 
-        TextFragment textFragment = (TextFragment) fragmentManager.findFragmentById(R.id.text_fragment);
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE ) {
 
-        if(textFragment != null && textFragment.isVisible()){
-            textFragment.showText(title,subTitle,image_display);
+
+            transaction = fragmentManager.beginTransaction();
+            textFragment.showText(title, subTitle, image_display);
+            transaction.commit();
         }else {
             Intent intent = new Intent(this, DetailsActivity.class);
             intent.putExtra(KEY1, title);

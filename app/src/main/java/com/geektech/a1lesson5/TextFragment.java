@@ -78,7 +78,7 @@ public class TextFragment extends Fragment {
     }
 
     public void showText(String text, String description, int image) {
-        if (text != null){
+        if (text != null && textSubTitle != null && textImage !=null){
             textTitle.setText(text);
             textSubTitle.setText(description);
             textImage.setImageResource(image);

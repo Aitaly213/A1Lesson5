@@ -69,20 +69,22 @@ public class ChangeFragment extends Fragment implements IFragment{
 
     private void setupRecyclerView(){
         list = new ArrayList<>();
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
-        list.add(new RecyclerModel("Hello from 30rd group","Здравствуйте",R.drawable.user2));
+        list.add(new RecyclerModel("Август","Привет!",R.drawable.user2));
+        list.add(new RecyclerModel("Агата","Hello",R.drawable.user2));
+        list.add(new RecyclerModel("Агафон","Hi",R.drawable.user2));
+        list.add(new RecyclerModel("Агафья","Здравствуйте",R.drawable.user2));
+        list.add(new RecyclerModel("Агнес","Привет",R.drawable.user2));
+        list.add(new RecyclerModel("Агнесса","Hello",R.drawable.user2));
+        list.add(new RecyclerModel("Агния","Привет",R.drawable.user2));
+        list.add(new RecyclerModel("Адам","Hello",R.drawable.user2));
+        list.add(new RecyclerModel("Аделина","Здравствуйте",R.drawable.user2));
+        list.add(new RecyclerModel("Адель","Hello",R.drawable.user2));
+        list.add(new RecyclerModel("Адольф","Hi",R.drawable.user2));
+        list.add(new RecyclerModel("Азамат","Здравствуйте",R.drawable.user2));
+        list.add(new RecyclerModel("Айдар","Hello",R.drawable.user2));
+        list.add(new RecyclerModel("Айгерим","Привет",R.drawable.user2));
+        list.add(new RecyclerModel("Бенедикт","Hi",R.drawable.user2));
+
 
         recyclerView.setLayoutManager(new LinearLayoutManager((MainActivity)getActivity()));
         adapter = new RecyclerAdapter(list,requireContext());
